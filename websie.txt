@@ -1,0 +1,144 @@
+
+        <div class="Mobiel-Nav-Header-Btn">
+          <span class="openNav" id="openNav" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#"><li>Guía de inicio</li></a>
+          <a href="#"><li>Tienda</li></a>
+          <a href="#"><li>Más información</li></a>
+          <a href="#"><li>Para Empresas</li></a>
+
+          <a href="#">
+            <div class="Sidenav-icon-Block">
+              <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #efefefff;"></i> 
+              <li>Buscar</li>
+            </div>
+          </a>
+
+          <label class="switch" >
+            <input type="checkbox" checked id="switch">
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+
+
+
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  margin: 20px auto;
+}
+.carousel{
+  display: flex;
+  width: 27.75rem;
+
+
+}
+
+.carousel-item{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-item-img img{
+  width: 100%;
+}
+.color img{
+  width: 27.75rem;
+  height: 38.375rem;
+  margin: -28rem 0 0 0;
+  
+}
+.Carousel-item-content{
+  margin: -30rem 0 7rem 0 ;
+}
+.carousel-item-text h3{
+  color: #6D56AE;
+  font-weight: 500;
+  text-align:left ; 
+  width: 26.375rem;
+  font-size: 2.5rem;
+}
+.carousel-item-text span{
+  color: #B2D9BA;
+  float: left;
+  margin: 3rem 1rem 1rem 1rem;
+}
+.coding{
+  width: 6rem;
+  padding: 1rem;
+  background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid #1CC743;
+  border-width: 0 6px 6px 0;
+  padding: 5px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  margin: 0 10px;
+}
+.arrow.left {
+
+  margin-right: -23rem;
+  transform: rotate(140deg); /* Left arrow */
+}
+.arrow.right {
+  margin-left: -23rem;
+  transform: rotate(-40deg); /* Right arrow */
+}
+.arrow:hover {
+  border-color: #6F58B0;
+}

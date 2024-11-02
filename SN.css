@@ -1,0 +1,361 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+   padding: 0;
+  box-sizing: border-box;
+  background-color: #DEF3E4;
+  color: #333;
+}
+
+/*--------------------- Nav Block ------------------*/
+.Nav-Header{
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: #2a2c4596;
+}
+.logo{
+  width: 20rem;
+}
+.navbar-links ul{
+  display: flex;
+ align-items: center;
+  list-style-type: none;
+}
+.navbar-links ul li{
+  font-size: 1rem;
+  margin: 0 2rem;
+  color: #ffffff;
+}
+.navbar-links  a{
+  text-decoration: none;
+}
+.startBtn{
+  margin: 0 3rem;
+  padding: 1rem 1rem ;
+  border-radius: .2rem;
+  background-color:#1CC743;
+}
+#backgroundElement{ 
+  padding: 1rem 0 5rem 0;
+  margin:  0 auto;
+  height:100%;
+  background-image: url("Images/content/sucesss.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+/*--------------------- Hero-Container ------------------*/
+.Hero-Container{
+  color: #ffffff;
+  margin: 10rem;
+}
+.Hero-Container h1{
+  width: 50rem;
+  font-size: 4rem;
+}
+.Hero-Container h3{
+  width: 46rem;
+  font-size: 1.5rem;
+}
+.Hero-Container button{
+  margin: 2rem 0 ;
+  font-size: 1.3rem;
+  color: #ffffff;
+  padding: .5rem 1rem;
+  border: none;
+  background-color: #1CC743;
+}
+/*--------------------- About-block------------------*/
+.About-block{
+  margin: -12rem auto 0 auto;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  background-color:#B2D9BA ;
+}
+.About-block-left img{
+  width: 32rem;
+}
+.line{
+  height: .2rem;
+  width: 45em;
+  background-color: #6F58B0;
+}
+.About-block-right {
+  padding: 5rem;
+}
+.About-block-right  h1{
+  font-size: 3rem;
+}
+.About-block-right p{
+  font-size: 1.4rem;
+  text-align: justify;
+  width: 45rem;
+
+}
+/*--------------------- Mission-block------------------*/
+.Mission-block{
+  margin: 6rem auto ;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+}
+.line2{
+  height: .2rem;
+  width: 100%;
+  background-color: #6F58B0;
+}
+.Mission-block h1{
+  float: left;
+  font-size: 3rem;
+}
+.Mission-block p{
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  text-align: justify;
+
+
+}
+/*--------------------- Team-block------------------*/
+.Team-block{
+  margin: 4rem auto ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+}
+.Team-block-left{
+  width: 45%;
+  padding: 5rem 10rem 5rem 8rem;
+  background-color:#B2D9BA ;
+}
+.TBLone span{
+  font-size: 13rem;
+  font-weight: 600;
+  color: #6F58B0;
+  position: absolute;
+  margin: -12rem 0 0 0;
+}
+.TBLtext h1{
+  font-size: 3rem;
+}
+.TBLtext p{
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  text-align: justify;
+}
+.Team-block-right img{
+  width: 35rem;
+  margin-left:-8rem ;
+}
+/*--------------------- Values-block------------------*/
+.Values-block{
+  margin: 2rem 0;
+  display: flex;
+  max-height: 50rem;
+ 
+
+}
+.line3{
+  height: .15rem;
+  width: 50%;
+  background-color: #ffffff;
+}
+.Values-block-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3.2rem;
+  background-color: #6f58b0af;
+}
+.Values-block-left h1{
+  margin: 2rem 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.Values-block-left p{
+  width: 40rem;
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: justify;
+}
+.Values-block-right { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 50rem;
+}
+#img1{
+  width: 40rem;
+}
+#img2{
+  width: 32.5rem;
+  height: 27rem;
+  object-fit: fill;
+}
+#img3{
+  width: 27.2rem;
+  height: 23.1rem;
+  margin-top: -.1rem;
+  
+}
+.Values-block-right-text {
+  width: 54%;
+  padding: 2.5rem 3.02rem;
+  color: #ffffff;
+  background-color: #2A2C45;
+  margin-top: -.1rem;
+}
+.Values-block-right-text ul li{
+  padding: .4rem;
+}
+/*--------------------- Values-block------------------*/
+.Why-block{
+  margin: 8rem auto ;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.line4{
+  height: .2rem;
+  width: 60%;
+  background-color: #6F58B0;
+}
+.WBTop h1{
+  font-size: 2.5rem;
+}
+
+
+
+
+
+.WBB-left img{
+  width: 40rem;
+}
+
+.WBB-right{
+  margin-top: -4rem;
+  padding:0 2rem;
+}
+.WBBRTop ul li{
+  width: 80%;
+  padding: .5rem 0;
+  font-size: 1.1rem;
+}
+.WBBRTop ul li span{
+  font-weight: 600;
+  color: #6F58B0;
+}
+.WBBottom{
+  display: flex;
+}
+.WBBRBottom p{
+  width: 90%;
+  text-align: justify;
+}
+.WBBRBottom a{
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: .3rem 1rem;
+  font-size: 1.3rem;
+  background-color: #1CC743;
+}
+
+/*--------------------- Footer------------------*/
+footer{
+  color: #FFFFFF;
+  display: flex;
+  padding: 2rem 0 0 0;
+  flex-direction: column;
+  background-color: #2A2C45;
+}
+.footer-top{
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.footer-top img{
+  width: 12rem;
+  height: 12rem;
+}
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-list ul li{
+  padding: .5rem 0;
+  list-style-type: none;
+}
+.footer-list ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* unvisited link */
+.footer-list a:link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+/* visited link */
+.footer-list a:visited {
+  color: #ffffff;
+}
+/* mouse over link */
+.footer-list a:hover {
+  color: #6F58B0;
+}
+/* selected link */
+.footer-list a:active {
+  color: rgb(255, 255, 255);
+}
+.footer-newsletter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-newsletter-input{
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+.footer-newsletter-input input{
+  width: 15rem;
+  padding: .3rem 1rem;
+
+}
+.footer-newsletter-input button{
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  padding: .3rem 1rem;
+  background-color: #1CC743;
+}
+.footer-newsletter-input a:hover{
+  color: #ffffff;
+  background-color: #6F58B0;
+}
+
+.line5{
+  margin: 2rem auto 1rem auto;
+  height: .2rem;
+  width: 90%;
+  background-color: #6F58B0; 
+}
+.footer-bottom{
+  margin: .5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom h1{
+  font-size: 1.2rem;
+}
+.Social-Media a{
+  margin: 0 1rem;
+}

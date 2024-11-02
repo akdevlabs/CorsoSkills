@@ -1,0 +1,325 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+   padding: 0;
+  box-sizing: border-box;
+  background-color: #F9F9F9;
+  color: #333;
+}
+/*--------------------- Nav Block ------------------*/
+.Nav-Header{
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.logo{
+  width: 20rem;
+}
+.navbar-links ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links ul li {
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: #B2D9BA;
+  padding: 0.5rem 2rem; /* Apply padding in the default state */
+  background-color: transparent; /* Default transparent to avoid size shift */
+  text-shadow: 1px 1px #0000005d;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links ul li:hover {
+  color: #000000; /* Hover text color */
+  background-color: #DEF3E4; /* Hover background */
+  border-radius: 5px; /* Optional: add rounded edges */
+}
+
+.navbar-links a {
+  text-decoration: none;
+}
+
+.startBtn {
+  margin: 0 3rem;
+  padding: 1rem 1rem;
+  border-radius: 0.2rem;
+  background-color: #B2D9BA;
+}
+
+.navbar-links a .SECBtn {
+  color: black;
+}
+
+#Course {
+  color: #000;
+  background-color: #DEF3E4;
+  padding: 0.5rem 1.5rem;
+  text-shadow: none;
+}
+
+/*--------------------- Course-Banners ------------------*/
+#backgroundElement{ 
+  padding: 2rem 0;
+  margin:  5rem;
+  border-radius:2rem;
+  background-image: url("Images/content/Outlaptop.webp");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.Course-Banners h1{
+  color: #ffffff;
+  font-size: 4rem;
+  margin: 10rem;
+  max-height: 34.438rem;
+}
+/*--------------------- Course-Block ------------------*/
+/* Container for the entire course block */
+.Course-Block {
+  margin: 0 5rem;
+  border-radius: 2rem;
+  padding: 5rem;
+  background-color: #DEF3E4;
+}
+
+/* Navigation section for the course categories */
+.Nav-Course-Block ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.Nav-Course-Block ul li {
+  font-size: 1.5rem;
+  list-style-type: none;
+  padding: 0.5rem 1.5rem; /* Ensure consistent padding */
+  border-radius: 5rem; /* Maintain border-radius in normal and hover state */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  background-color: transparent; /* Default transparent to avoid size shift */
+  color: #000000; /* Default text color */
+  cursor: pointer;
+}
+
+.Nav-Course-Block ul li:hover {
+  color: #ffffff; /* Hover text color */
+  background-color: #6F58B0; /* Hover background */
+}
+.Courses{
+  gap: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Main card styling */
+.course-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Thumbnail styling */
+.course-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Info section */
+.course-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Rating section */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stars {
+  color: #FFD700; /* Gold color for stars */
+}
+
+.stars span {
+  font-size: 1.2rem;
+}
+
+.average-rating {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Teacher info styling */
+.teacher-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.teacher-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.teacher-name {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Course cost styling */
+.course-cost {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6F58B0;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- Footer------------------*/
+footer{
+  color: #FFFFFF;
+  display: flex;
+  padding: 2rem 0 0 0;
+  flex-direction: column;
+  background-color: #2A2C45;
+}
+.footer-top{
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.footer-top img{
+  width: 12rem;
+  height: 12rem;
+}
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-list ul li{
+  padding: .5rem 0;
+  list-style-type: none;
+}
+.footer-list ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* unvisited link */
+.footer-list a:link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+/* visited link */
+.footer-list a:visited {
+  color: #ffffff;
+}
+/* mouse over link */
+.footer-list a:hover {
+  color: #6F58B0;
+}
+/* selected link */
+.footer-list a:active {
+  color: rgb(255, 255, 255);
+}
+.footer-newsletter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-newsletter-input{
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+.footer-newsletter-input input{
+  width: 15rem;
+  padding: .3rem 1rem;
+
+}
+.footer-newsletter-input button{
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  padding: .3rem 1rem;
+  background-color: #1CC743;
+}
+.footer-newsletter-input a:hover{
+  color: #ffffff;
+  background-color: #6F58B0;
+}
+
+.line5{
+  margin: 2rem auto 1rem auto;
+  height: .2rem;
+  width: 90%;
+  background-color: #6F58B0; 
+}
+.footer-bottom{
+  margin: .5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom h1{
+  font-size: 1.2rem;
+}
+.Social-Media a{
+  margin: 0 1rem;
+}

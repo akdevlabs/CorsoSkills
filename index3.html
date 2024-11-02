@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4a32509195.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore-compat.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CorsoSkills/Preguntas Frecuentes</title>
+  <link rel="stylesheet" href="PF.css">
+  <meta name="viewport" content="width=device-width, intial-scale=1, shrinck-to-fit=no">
+  <link rel="shortcut icon" href="Images\logos\Icon.webp">
+  <style type="text/css"></style>
+  
+</head>
+<body>
+
+  
+ 
+  <header>
+    <section class="Nav-Header">
+
+      <nav  class="navbar-block">
+
+        <a href="index.html" class="Return-btn">
+          <i class="fa-solid fa-house" style="color: #6F58B0;"></i>
+        </a>
+        
+        <div class="BLogo">
+          <img class="slogo" src="Images\logos\DarkName.webp"></a>
+        </div>
+         
+
+        <div class="Mobiel-Nav-Header-Btn">
+          <span class="openNav">.</span>
+        </div>
+
+       
+      </nav> 
+    </section>   
+  </header>
+
+  <main>
+    <section class="Hero-Block">
+        <div class="Hero-Block-content">
+            <h1>Preguntas Frecuentes</h1>
+            <div class="searh-block">
+              
+              <input type="text" id="search"  placeholder="Estoy aquí para ayudar..... ">
+ 
+              <button class="send" id="mag"><i class="fa-solid fa-magnifying-glass" style="color: #00ff01;"></i></button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="info-banner">
+      <div class="info-banner-text">
+        <p>Estas son solo algunas de las preguntas frecuentes sobre CorsoSkill. Si tiene alguna otra pregunta, no dude en ponerse en contacto con nuestro equipo de atención al cliente.</p>
+      </div>
+    </section>
+
+    <section class="FAQ-Dropdown">
+
+      <div class="FAQ-Dropdown-block-1" id="searchSection">
+     
+        <div class="dropdown" id="one">
+          <button class="dropbtn" id="1-btn">¿Qué es CorsoSkill?</button>
+          <div class="dropdown-content" id="Dd-1">
+            <p>CorsoSkill es una plataforma de aprendizaje diseñada para ofrecer cursos en áreas clave como idiomas, habilidades técnicas, desarrollo profesional, y más. Nuestro objetivo es ayudarte a alcanzar tus metas de aprendizaje y crecimiento personal de manera efectiva y accesible.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="two">
+          <button class="dropbtn" id="2-btn">¿Cómo funcionan los cursos en CorsoSkill?</button>
+          <div class="dropdown-content" id="Dd-2">
+            <p>Nuestros cursos están disponibles en formatos en línea y presenciales, y cada uno está diseñado para adaptarse a diferentes estilos de aprendizaje. Ofrecemos clases en vivo, recursos descargables, y acceso a ejercicios prácticos. También puedes elegir entre clases individuales o grupales según tus preferencias y necesidades.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="three">
+          <button class="dropbtn" id="3-btn">¿Qué tipos de cursos ofrecen?</button>
+          <div class="dropdown-content" id="Dd-3">
+            <h3>Ofrecemos cursos en diversas categorías, tales como:</h3>
+            <ul>
+              <li>Idiomas</li>
+              <li>Habilidades de comunicación</li>
+              <li>Habilidades digitales y tecnología</li>
+              <li>Desarrollo de liderazgo y habilidades blandas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown" id="four">
+          <button class="dropbtn"  id="4-btn">¿Cómo me inscribo por curso?</button>
+          <div class="dropdown-content" id="Dd-4">
+            <h3>Para inscribirte, sigue estos pasos:</h3>
+            <ul>
+              <li>Visita nuestra página web y selecciona el curso de tu interés.</li>
+              <li>Haz clic en "Inscribirse" y crea una cuenta si aún no la tienes.</li>
+              <li>Sigue las instrucciones para completar el proceso de pago.</li>
+              <li>Recibirás una confirmación por correo electrónico con los detalles de tu curso.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown" id="five">
+          <button class="dropbtn"  id="5-btn">¿Cuánto cuestan los cursos?</button>
+          <div class="dropdown-content" id="Dd-5">
+            <p>Los precios de los cursos pueden variar dependiendo de la duración, o la categoría del curso. Los detalles de precios están disponibles en la página de  cursos. Contamos también con opciones de pago y descuentos ocasionales.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="six">
+          <button class="dropbtn" id="6-btn">¿Qué incluye la suscripción de Cursos Premium Ilimitados?</button>
+          <div class="dropdown-content" id="Dd-6">
+            <h3>Nuestra suscripción de Cursos Premium Ilimitados ofrece acceso completo a todos los cursos de CorsoSkill por una tarifa mensual fija. Con esta suscripción, podrás:</h3>
+            <ul>
+              <li>Acceder a todos los cursos de nuestra plataforma sin restricciones de contenido o categoría.</li>
+              <li>Obtener certificados al completar cada curso.</li>
+              <li>Acceso a contenido exclusivo..</li>
+              <li>Aprovechar recursos adicionales, como talleres exclusivos, sesiones de mentoría, y materiales descargables para complementar tu aprendizaje.</li>
+              <li>Apoyo via telephonic, correo electrónico y chatbot limitado</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown" id="seven">
+          <button class="dropbtn" id="7-btn">¿Cuánto cuesta la suscripción de Cursos Premium Ilimitados?</button>
+          <div class="dropdown-content" id="Dd-7">
+            <p>El precio de la suscripción mensual de Cursos Premium Ilimitados es de $480 y se cobra automáticamente cada mes. También ofrecemos descuentos ocasionales y planes anuales con tarifas reducidas.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="eight">
+          <button  class="dropbtn" id="8-btn">¿Puedo cancelar la suscripción en cualquier momento?</button>
+          <div class="dropdown-content" id="Dd-8">
+            <p>Sí, puedes cancelar tu suscripción en cualquier momento desde tu cuenta en la plataforma. Tendrás acceso a los cursos hasta el final del período de facturación, sin cargos adicionales.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="nine">
+          <button  class="dropbtn" id="9-btn">¿Cómo se diferencian los Cursos Premium Ilimitados de los cursos individuales?</button>
+          <div class="dropdown-content" id="Dd-9">
+            <p>Con la suscripción de Cursos Premium Ilimitados, no necesitas pagar por cada curso individualmente, lo cual te permite explorar libremente diferentes temas y avanzar a tu propio ritmo. Además, tendrás acceso a contenidos exclusivos y eventos especiales que no están disponibles para los usuarios de cursos individuales.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="ten">
+          <button  class="dropbtn" id="10-btn">¿¿Hay una clase de prueba para los Cursos Premium Ilimitados?</button>
+          <div class="dropdown-content" id="Dd-10">
+            <p>Sí, contamos con una suscripción Freemium que te permite acceder a una selección limitada de cursos gratuitos. Esto te permite explorar nuestra plataforma y experimentar la calidad de nuestros contenidos antes de decidirte por la suscripción Premium Ilimitada.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="eleven ">
+          <button class="dropbtn" id="11-btn">¿Puedo obtener un descuento si me suscribo por un año completo a los Cursos Premium Ilimitados?</button>
+          <div class="dropdown-content" id="Dd-11">
+            <p>Sí, ofrecemos descuentos especiales para suscripciones anuales a los Cursos Premium Ilimitados. Este plan te permite ahorrar en comparación con los pagos mensuales y disfrutar de acceso sin restricciones a todos nuestros cursos durante un año completo. Consulta nuestras opciones de suscripción en la página de precios o contáctanos para más detalles.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="twelve">
+          <button class="dropbtn" id="12-btn">¿Puedo cambiar de un curso individual a la suscripción Premium Ilimitada?</button>
+          <div class="dropdown-content" id="Dd-12">
+            <p>¡Claro! Si ya has adquirido un curso individual y decides optar por la suscripción Premium Ilimitada para acceder a todos los cursos, puedes hacer el cambio fácilmente. Solo contáctanos en [correo de contacto], y te ayudaremos a realizar la actualización.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="thirteen">
+          <button class="dropbtn" id="13-btn"> ¿Los cursos incluyen evaluaciones y exámenes?</button>
+          <div class="dropdown-content" id="Dd-13">
+            <p>Sí, muchos de nuestros cursos incluyen evaluaciones y exámenes para medir tu progreso y comprensión del material. Estos pueden ser cuestionarios, pruebas prácticas o evaluaciones finales, y algunos cursos incluyen tareas adicionales. Las evaluaciones ayudan a reforzar el aprendizaje y son necesarias para obtener el certificado de finalización.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="fourteen">
+          <button class="dropbtn"  id="14-btn">¿Cómo funcionan los pagos?</button>
+          <div class="dropdown-content" id="Dd-14">
+            <p>Pagos: Los pagos pueden realizarse mediante tarjeta de crédito, débito y otros métodos electrónicos seguros.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="fifteen">
+          <button class="dropbtn"  id="15-btn">¿Puedo acceder a los cursos en cualquier momento?</button>
+          <div class="dropdown-content" id="Dd-15">
+            <p>Sí, nuestros cursos en línea están disponibles para que los completes a tu propio ritmo, y puedes acceder a ellos en cualquier momento. Las clases en vivo tienen horarios específicos, los cuales se adaptan a diferentes zonas horarias para mayor comodidad.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="sixteen">
+          <button class="dropbtn" id="16-btn">¿Cómo contacto al soporte de CorsoSkill?</button>
+          <div class="dropdown-content" id="Dd-16">
+            <h3>Puedes comunicarte con nuestro equipo de soporte a través de:</h3>
+            <ul>
+              <li>Correo electrónico: [correo de contacto]</li>
+              <li>Chat en vivo: Disponible en nuestro sitio web durante el horario de atención.</li>
+              <li>Teléfono: Llama al [número de contacto] para hablar directamente con un representante.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown" id="seventeen">
+          <button class="dropbtn" id="17-btn">¿Ofrecen certificaciones?</button>
+          <div class="dropdown-content" id="Dd-17">
+            <p>Nuestros instructores son profesionales calificados y expertos en sus campos, con experiencia en enseñanza y en las áreas específicas de cada curso. Cada instructor es seleccionado cuidadosamente para ofrecer la mejor experiencia de aprendizaje a nuestros estudiantes.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="eighttenn">
+          <button  class="dropbtn" id="18-btn">¿CorsoSkill ofrece planes corporativos?</button>
+          <div class="dropdown-content" id="Dd-18">
+            <p>Sí, entendemos que pueden surgir imprevistos. Puedes reprogramar tus clases o pausarlas temporalmente de acuerdo con nuestra política de reprogramación. Solo debes contactar a nuestro equipo de soporte para obtener ayuda con el proceso.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="nineteen">
+          <button  class="dropbtn" id="19-btn">¿Puedo recomendar a un amigo?</button>
+          <div class="dropdown-content" id="Dd-19">
+            <p>¡Por supuesto! Tenemos un programa de referidos donde puedes recomendar a amigos y recibir beneficios. Para más detalles, consulta nuestra página de programa de referidos o contáctanos directamente.</p>
+          </div>
+        </div>
+
+        <div class="dropdown" id="twentey">
+          <button  class="dropbtn" id="20-btn">¿Cómo puedo dar feedback o sugerencias sobre los cursos?</button>
+          <div class="dropdown-content" id="Dd-20">
+            <p>Valoramos mucho la opinión de nuestros estudiantes. Puedes enviar tus comentarios y sugerencias a través de nuestro formulario de retroalimentación en la plataforma o escribiendo a [correo de contacto].</p>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+  </main>
+
+
+
+
+  <footer>
+    <div class="footer-top">
+      <img  src="Images\logos\Large Icon.webp" alt="Large flower Icon">
+      <div class="footer-list">
+        <h1>Plataforma</h1>
+        <ul>
+          <a href="index3.html"><li>Sobre Nosotros</li></a>
+          <a href="#"><li>Oportunidades Laborales</li></a>
+          <a href="#"><li>Prensa</li></a>
+          <a href="index7.html"><li>Blog</li></a>
+          <a href="#"><li>Afiliados</li></a>
+        </ul>
+  
+      </div>
+      <div class="footer-list">
+        <h1>Enseñanza</h1>
+        <ul>
+          <a href="#"><li>Academia de Enseñanza</li></a>
+          <a href="#"><li>Conviértete en Docente</li></a>
+          <a href="#"><li>Guía del Docente</li></a>
+          <a href="#"><li>Asociaciones</li></a>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <h1>Recursos</h1>
+        <ul>
+          <a href="index3.html"><li>Preguntas Frecuentes</li></a>
+          <a href="index4.html"><li>Términos y Condiciones</li></a>
+          <a href="index5.html"><li>Política de Privacidad</li></a>
+          <a href="index6.html"><li>Política de Plataforma</li></a>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+
+    
+        
+        <div class="footer-newsletter-input">
+          
+         
+
+          <form class="footer-nav-center-right-top" method="POST" action="https://formsubmit.co/#" enctype="multipart/form-data">
+              
+            <label class="email-input" for="email-input">Suscríbete al boletín</label><br>
+  
+            <input 
+            id="email-input" 
+            type="email" 
+            name="email" 
+            placeholder="Ingresa tu correo electrónico">
+            <button type="submit">Enviar</button>
+  
+        </form>
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="line5"></div>
+    <div class="footer-bottom">
+ 
+      <h1>© 2024 CorsoSkills. All rights reserved</h1>
+
+      <div class="Social-Media" id="Social-Media">
+        <a href="#" target="_blank"><i class="fa-brands fa-youtube" style="color: #B2D9BA;"></i></a> 
+  
+        <a href="#" target="_blank"><i class="fa-brands fa-x-twitter" style="color: #B2D9BA;"></i></a>  
+  
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #B2D9BA;"></i></a>  
+
+        <a href="#" target="_blank"><i class="fa-brands fa-linkedin" style="color: #B2D9BA;"></i></a>  
+  
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram" style="color: #B2D9BA;"></i></a>   
+  
+        <a href="#" target="_blank"><i class="fa-brands fa-tiktok" style="color: #B2D9BA;"></i></a>    
+      </div>
+  
+    </div> 
+     
+  </footer>
+
+  
+  
+
+
+
+  <script type="module" src="PF.js"></script>
+</body>
+</html>

@@ -144,7 +144,7 @@ input::placeholder{
   width: max-content; /* Set width according to the content */
 }
 /* Individual carousel item */
-.carousel-item {
+.RCC-carousel-item {
   box-sizing: border-box;
   padding: 2.2rem;
   text-align: center;
@@ -154,7 +154,7 @@ input::placeholder{
   height: auto;
 
 }
-.carousel-item h3 {
+.RCC-carousel-item h3 {
   font-size: 1.2rem;
   margin-top: 10px;
   color: #333;
@@ -209,7 +209,7 @@ input::placeholder{
   margin: 0 10px;
 }
 .arrow.left {
-  margin-right: 0rem;
+  margin-right: 4rem;
   transform: rotate(140deg); /* Left arrow */
 }
 .arrow.right {
@@ -246,7 +246,6 @@ input::placeholder{
 .Categorie-block a{
   text-decoration: none;
 }
-
 .Categorie{
   max-width: 18.938rem;
   min-height: 18.938;
@@ -306,141 +305,13 @@ input::placeholder{
   background-color: #1CC743;
   text-decoration: none;
 }
-/*--------------------- RCC-block ------------------*/
-.NCC-block{
-  float: center;
-}
-.NCC-block-tittle{
-  width: 30.938rem;
-  margin: 0 10rem;
-}
-.NCC-block-tittle h1{
-  font-size: 4rem;
-  color: #6D56AE;
-}
-.NC-carousel-block{
-  display: flex;
-  margin: 0 10rem ;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-}
-.New-carousel-container-block{
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  margin: 20px auto;
-}
-.New-carousel-container {
-  width: 100%;
-  overflow: hidden; /* Hide the overflow to create the sliding effect */
-}
-/* Carousel styling */
-.New-carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out; /* Smooth animation when scrolling */
-  width: max-content; /* Set width according to the content */
-}
-/* Individual carousel item */
-.New-carousel-item {
-  box-sizing: border-box;
-  padding: 2.2rem;
-  text-align: center;
-}
-.New-carousel-item-img img {
-  width:  26rem;/* Make the image responsive */
-  height: auto;
-
-}
-.New-carousel-item h3 {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  color: #333;
-}
-.New-color img{
-  width: 26rem;
-  height: 38rem;
-  
-  margin: -28rem 0 0 0;
-  
-}
-.New-Carousel-item-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: -27rem 0 7rem 0 ;
-}
-.New-carousel-item-text h3{
-  color: #6D56AE;
-  font-weight: 500;
-  text-align:left ; 
-  width: 25rem;
-  font-size: 2.5rem;
-}
-.New-carousel-item-text span{
-  color: #B2D9BA;
-  float: left;
-  margin: 0;
-
-
-}
-.New-coding{
-  width: 6rem;
-  padding: 1rem;
-  margin: 0 0 0 -17rem;
-  background-color: #ffffff;
-}
-.New-carousel-controls {
-  text-align: center;
-  margin-top: 10px;
-}
-.New-arrow {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border: solid #1CC743;
-  border-width: 0 6px 6px 0;
-  padding: 5px;
-  cursor: pointer;
-  transform: rotate(45deg);
-  margin: 0 10px;
-}
-.New-arrow.left {
-  margin-right: 0rem;
-  transform: rotate(140deg); /* Left arrow */
-}
-.New-arrow.right {
-  margin-left: 5rem;
-  transform: rotate(-40deg); /* Right arrow */
-}
-.New-arrow:hover {
-  border-color: #6F58B0;
-}
-
-
-
-
-
-
-
-.inpact-block{
-  display: flex;
-  flex-direction: row;
-
-  background-color: #DEF3E4;
-}
-.inpact-block-content{
-  text-align: justify;
-}
-
-
+/*--------------------- New-block ------------------*/
 
 
 /*--------------------- Sub-Plans-Block ------------------*/
 
 .SPB-title{
+  color: #6D56AE;
   display: flex;
   margin: 2rem;
   flex-direction: column;
@@ -450,12 +321,11 @@ input::placeholder{
   gap: 2rem;
   display: flex;
   align-items: center;
-
-
 }
 .toggle-switch-block a{
+  color: #fff;
   padding: .5rem 1rem;
-  background-color: #ACE2E4;
+  background-color: #1CC743;
 }
 /* Subscription Plans */
 .subscription-plans {
@@ -466,7 +336,7 @@ input::placeholder{
 }
 .plan-tittle {
   position: relative;
-  background-color: #ACE2E4;
+  background-color: #DEF3E4;
   padding:1rem ;
   border-radius: 1.5rem;
 
@@ -533,7 +403,7 @@ input::placeholder{
 
 }
 .plan-content span{
-  color: #013948;
+  color: #6D56AE;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0 2rem ;
@@ -547,7 +417,7 @@ input::placeholder{
 .plan-tittle-2 {
   color: #FFFFFF;
   position: relative;
-  background-color: #013948;
+  background-color: #6D56AE;
   padding: 3rem 1rem; /* Increase padding to make it larger */
   border-radius: 1.5rem;
   width: 29.5rem; /* Increase the width to make it 2rem larger */
@@ -562,9 +432,9 @@ input::placeholder{
   border-radius: 0 0 2rem 2rem;
 }
 .plan-tittle-3 {
-  color: #FFFFFF;
+  color: #000000;
   position: relative;
-  background-color: #555555;
+  background-color: #B2D9BA;
   padding:1rem ;
   border-radius: 1.5rem;
   width: 27.5rem;
@@ -583,7 +453,7 @@ input::placeholder{
 .toggle-label {
   position: absolute;
   cursor: pointer;
-  background-color: #013948;
+  background-color: #6D56AE;
   border-radius: 34px;
   width: 100%;
   height: 100%;
@@ -607,7 +477,7 @@ input::placeholder{
 }
 /* Change the background color when the checkbox is checked */
 .toggle-checkbox:checked + .toggle-label {
-  background-color: #556B2F;
+  background-color: #1CC743;
 }
 .subscribe-btn {
 
@@ -621,29 +491,196 @@ input::placeholder{
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 #subscribe-btn-1{
-  background-color: #ACE2E4; /* Dark background color */
-  color: #013948; /* White text */
+  background-color: #DEF3E4; /* Dark background color */
+  color: #000000; /* White text */
 }
 #subscribe-btn-1:hover {
-  background-color: #556B2F; /* Light background on hover */
+  background-color: #1CC743; /* Light background on hover */
   color: #ffffff; /* Darker text color on hover */
   transform: scale(1.05); /* Slightly larger on hover */
 }
 #subscribe-btn-2{
-  background-color: #013948; /* Dark background color */
+  background-color: #6D56AE; /* Dark background color */
   color: #ffffff; /* White text */
 }
 #subscribe-btn-2:hover {
-  background-color: #556B2F; /* Light background on hover */
+  background-color: #1CC743; /* Light background on hover */
   color: #ffffff; /* Darker text color on hover */
   transform: scale(1.05); /* Slightly larger on hover */
 }
 #subscribe-btn-3{
-  background-color: #555555; /* Dark background color */
+  background-color: #B2D9BA; /* Dark background color */
   color: #ffffff; /* White text */
 }
 #subscribe-btn-3:hover {
-  background-color: #556B2F; /* Light background on hover */
+  background-color: #1CC743; /* Light background on hover */
   color: #ffffff; /* Darker text color on hover */
   transform: scale(1.05); /* Slightly larger on hover */
+}
+
+
+/*--------------------- review-section------------------*/
+/* Main container for the review block */
+.review-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Review section styling */
+.review-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styling for the review text display */
+.review-display {
+  margin: 15px 0;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 70%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#review-text {
+  font-size: 1.2em;
+  color: #444;
+}
+
+/* Styling for the review indicators */
+.review-indicators {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Change indicator color on hover */
+.indicator:hover {
+  background-color: #666;
+  transform: scale(1.1);
+}
+
+/* Review block image styling */
+.review-block-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-block-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/*--------------------- Footer------------------*/
+footer{
+  color: #FFFFFF;
+  display: flex;
+  padding: 2rem 0 0 0;
+  flex-direction: column;
+  background-color: #2A2C45;
+}
+.footer-top{
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.footer-top img{
+  width: 12rem;
+  height: 12rem;
+}
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-list ul li{
+  padding: .5rem 0;
+  list-style-type: none;
+}
+.footer-list ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* unvisited link */
+.footer-list a:link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+/* visited link */
+.footer-list a:visited {
+  color: #ffffff;
+}
+/* mouse over link */
+.footer-list a:hover {
+  color: #6F58B0;
+}
+/* selected link */
+.footer-list a:active {
+  color: rgb(255, 255, 255);
+}
+.footer-newsletter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-newsletter-input{
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+.footer-newsletter-input input{
+  width: 15rem;
+  padding: .3rem 1rem;
+
+}
+.footer-newsletter-input button{
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  padding: .3rem 1rem;
+  background-color: #1CC743;
+}
+.footer-newsletter-input a:hover{
+  color: #ffffff;
+  background-color: #6F58B0;
+}
+
+.line5{
+  margin: 2rem auto 1rem auto;
+  height: .2rem;
+  width: 90%;
+  background-color: #6F58B0; 
+}
+.footer-bottom{
+  margin: .5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom h1{
+  font-size: 1.2rem;
+}
+.Social-Media a{
+  margin: 0 1rem;
 }

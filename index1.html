@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4a32509195.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore-compat.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CorsoSkills/Courses</title>
+  <link rel="stylesheet" href="Cursos.css">
+  <meta name="viewport" content="width=device-width, intial-scale=1, shrinck-to-fit=no">
+  <link rel="shortcut icon" href="Images\logos\Icon.webp">
+  <style type="text/css"></style>
+  
+</head>
+<body>
+  <header>
+ 
+    <nav  class="Nav-Header" id="Nav-Header">
+
+      <div class="logo-block" >
+          <a href="index.html"><img class="logo"    src="Images\logos\DarkName.webp"></a>
+      </div>
+        
+      <div class="navbar-links">
+          <ul>
+              <a href="#"><li id="Course">Cursos</li></a>
+              <a href="#"><li>Tutoriales</li></a>
+              <a href="#"><li>Precios</li></a> 
+              <a href="#"><li>Características</li></a> 
+              <a href="#"><li>Sobre Nosotros</li></a>
+              <a href="#"><li>Login </li></a>
+              <a href="#" class="startBtn"><li class="SECBtn">Explorar Cursos</li></a>              
+          </ul>
+      </div>  
+
+    </nav> 
+  
+
+  
+
+  </header>
+  <main>
+
+  <section class="Course-Banners" id="backgroundElement">
+    <h1>Formación de Excelencia en Corsoskills:<br>Tu Camino al Éxito Profesional</h1>
+
+  </section>
+
+  <section class="Course-Block">
+    <div class="Nav-Course-Block">
+      <ul>
+        <li id="Trend">Trending</li>
+        <li id="Dev">Desarrollo</li>
+        <li id="Buissnes">Negocios</li>
+        <li id="Desine">Diseño</li>
+        <li id="leader">Liderazgo</li>
+        <li id="Sales">Ventas</li>
+      </ul>
+
+    </div>
+
+    <div class="Courses">
+
+      <div class="slot" id="slot1">
+        <div class="slot-thumbnail" id="thumbnail"></div>
+        <div class="slot-center">
+          <div class="slot-center-left"  id="scl">
+
+          </div>
+          <div class="slot-center-right" id="scr"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl"></div>
+          <div class="slot-bottom-right" id="sbr"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot2">
+        <div class="slot-thumbnail" id="thumbnail2"></div>
+        <div class="slot-center">
+          <div class="slot-center-left" id="scl2"></div>
+          <div class="slot-center-right" id="scr2"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl2"></div>
+          <div class="slot-bottom-right" id="sbr2"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot3">
+        <div class="slot-thumbnail" id="thumbnail"></div>
+        <div class="slot-center">
+          <div class="slot-center-left"  id="scl3"></div>
+          <div class="slot-center-right" id="scr3"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl3"></div>
+          <div class="slot-bottom-right" id="sbr3"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot4">
+        <div class="slot-thumbnail" id="thumbnail4"></div>
+        <div class="slot-center">
+          <div class="slot-center-left" id="scl4"></div>
+          <div class="slot-center-right" id="scr4"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl4"></div>
+          <div class="slot-bottom-right" id="sbr4"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot5">
+        <div class="slot-thumbnail" id="thumbnail5"></div>
+        <div class="slot-center">
+          <div class="slot-center-left"  id="scl5"></div>
+          <div class="slot-center-right" id="scr5"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl"></div>
+          <div class="slot-bottom-right" id="sbr"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot6">
+        <div class="slot-thumbnail" id="thumbnail6"></div>
+        <div class="slot-center">
+          <div class="slot-center-left" id="scl6"></div>
+          <div class="slot-center-right" id="scr6"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl6"></div>
+          <div class="slot-bottom-right" id="sbr6"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot7">
+        <div class="slot-thumbnail" id="thumbnail7"></div>
+        <div class="slot-center">
+          <div class="slot-center-left"  id="scl7"></div>
+          <div class="slot-center-right" id="scr7"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl7"></div>
+          <div class="slot-bottom-right" id="sbr7"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot8">
+        <div class="slot-thumbnail" id="thumbnail8"></div>
+        <div class="slot-center">
+          <div class="slot-center-left" id="scl8"></div>
+          <div class="slot-center-right" id="scr8"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl8"></div>
+          <div class="slot-bottom-right" id="sbr8"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot9">
+        <div class="slot-thumbnail" id="thumbnail9"></div>
+        <div class="slot-center">
+          <div class="slot-center-left"  id="scl9"></div>
+          <div class="slot-center-right" id="scr9"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl9"></div>
+          <div class="slot-bottom-right" id="sbr9"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot10">
+        <div class="slot-thumbnail" id="thumbnail10"></div>
+        <div class="slot-center">
+          <div class="slot-center-left" id="scl10"></div>
+          <div class="slot-center-right" id="scr10"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl10"></div>
+          <div class="slot-bottom-right" id="sbr10"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot11">
+        <div class="slot-thumbnail" id="thumbnail11"></div>
+        <div class="slot-center">
+          <div class="slot-center-left"  id="scl11"></div>
+          <div class="slot-center-right" id="scr11"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl11"></div>
+          <div class="slot-bottom-right" id="sbr11"></div>
+        </div>
+      </div>
+
+      <div class="slot" id="slot12">
+        <div class="slot-thumbnail" id="thumbnail12"></div>
+        <div class="slot-center">
+          <div class="slot-center-left" id="scl12"></div>
+          <div class="slot-center-right" id="scr12"></div>
+        </div>
+        <div class="slot-bottom">
+          <div class="slot-bottom-left"  id="sbl12"></div>
+          <div class="slot-bottom-right" id="sbr12"></div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+    
+
+  <div class="Courses"></div>
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <img  src="Images\logos\Large Icon.webp" alt="Large flower Icon">
+      <div class="footer-list">
+        <h1>Plataforma</h1>
+        <ul>
+          <a href="#"><li>Sobre Nosotros</li></a>
+          <a href="#"><li>Oportunidades Laborales</li></a>
+          <a href="#"><li>Prensa</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Afiliados</li></a>
+        </ul>
+  
+      </div>
+      <div class="footer-list">
+        <h1>Enseñanza</h1>
+        <ul>
+          <a href="#"><li>Academia de Enseñanza</li></a>
+          <a href="#"><li>Conviértete en Docente</li></a>
+          <a href="#"><li>Guía del Docente</li></a>
+          <a href="#"><li>Asociaciones</li></a>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <h1>Recursos</h1>
+        <ul>
+          <a href="#"><li>Preguntas Frecuentes</li></a>
+          <a href="#"><li>Términos y Condiciones</li></a>
+          <a href="#"><li>Política de Privacidad</li></a>
+          <a href="#"><li>Política de Plataforma</li></a>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+
+    
+        
+        <div class="footer-newsletter-input">
+          
+         
+
+          <form class="footer-nav-center-right-top" method="POST" action="https://formsubmit.co/#" enctype="multipart/form-data">
+              
+            <label class="email-input" for="email-input">Suscríbete al boletín</label><br>
+  
+            <input 
+            id="email-input" 
+            type="email" 
+            name="email" 
+            placeholder="Ingresa tu correo electrónico">
+            <button type="submit">Enviar</button>
+  
+        </form>
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="line5"></div>
+    <div class="footer-bottom">
+ 
+      <h1>© 2024 CorsoSkills. All rights reserved</h1>
+
+      <div class="Social-Media" id="Social-Media">
+        <a href="#" target="_blank"><i class="fa-brands fa-youtube" style="color: #B2D9BA;"></i></a> 
+  
+        <a href="#" target="_blank"><i class="fa-brands fa-x-twitter" style="color: #B2D9BA;"></i></a>  
+  
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #B2D9BA;"></i></a>  
+
+        <a href="#" target="_blank"><i class="fa-brands fa-linkedin" style="color: #B2D9BA;"></i></a>  
+  
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram" style="color: #B2D9BA;"></i></a>   
+  
+        <a href="#" target="_blank"><i class="fa-brands fa-tiktok" style="color: #B2D9BA;"></i></a>    
+      </div>
+  
+    </div> 
+     
+  </footer>
+  
+
+
+
+  <script type="module" src="Cursos.js"></script>
+</body>
+</html>

@@ -80,10 +80,11 @@ input::placeholder{
 }
 /*--------------------- Stat block ------------------*/
 .Stat-block{
-  gap: 8rem;
+  gap: 5%;
   margin: 5rem 0 0 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .stat{
   display: flex;
@@ -104,6 +105,7 @@ input::placeholder{
 }
 /*--------------------- trinagel-right ------------------*/
 .trinagel-right img{
+  height: 20%;
   float: right;
   position: relative;
 }
@@ -310,212 +312,193 @@ input::placeholder{
 
 /*--------------------- Sub-Plans-Block ------------------*/
 
-.SPB-title{
-  color: #6D56AE;
-  display: flex;
-  margin: 2rem;
-  flex-direction: column;
-  align-items: center;
+/* Main Section Styling */
+.Sub-Plans-Block {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.SPB-title h3 {
+  font-size: 1.25rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.SPB-title h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.SPB-title p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Toggle Switch Block */
 .toggle-switch-block {
-  gap: 2rem;
   display: flex;
-  align-items: center;
-}
-.toggle-switch-block a{
-  color: #fff;
-  padding: .5rem 1rem;
-  background-color: #1CC743;
-}
-/* Subscription Plans */
-.subscription-plans {
-  display: flex;
-  justify-content: center;
-  
-  gap: 20px;
-}
-.plan-tittle {
-  position: relative;
-  background-color: #DEF3E4;
-  padding:1rem ;
-  border-radius: 1.5rem;
-
-  width: 27.5rem;
-}
-.plan-tittle-up{
-  gap: 8rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.plan-tittle-right img{
-  width: 3.25rem;
-}
-.plan-tittle-left h3{
-  font-size: 1rem;
-}
-.plan-tittle-left h1{
-  font-size: 2rem;
-}
-.plan-content{
-  margin: -1rem  0 1rem 0;
-  padding: 2rem .2rem;
-  width: 28.5rem;
-  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.664); /* Box shadow */
-  background-color:#FFFFFF ;
-  border-radius: 0 0 2rem 2rem;
-}
-.plan-content ul {
-  list-style: none;
-  margin: 0  0 3rem -2rem;
-}
-.plan-content ul li{
-  margin: 1rem 0;
-  display: flex;
-  align-items: center;
-  
-}
-.plan-content a{
-  width: 20rem;
-  font-size: 1rem;
-  text-align: justify;  
-  
-}
-.plan-content span{
-  margin-right: 2rem;
-  
-}
-.plan-tittle-down{
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
-.plan-tittle-down a{
-  margin-top: 2rem;
-}
-.plan h3 {
-  margin-bottom: 10px;
-}
-.price {
-  font-size: 2rem;
 
-}
-.plan-content span{
+.toggle-switch-block a {
+  font-weight: bold;
   color: #6D56AE;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0 2rem ;
+  cursor: pointer;
+  text-decoration: none;
 }
-.plan{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
-.plan-tittle-2 {
-  color: #FFFFFF;
-  position: relative;
-  background-color: #6D56AE;
-  padding: 3rem 1rem; /* Increase padding to make it larger */
-  border-radius: 1.5rem;
-  width: 29.5rem; /* Increase the width to make it 2rem larger */
-}
-.plan-content-2 {
-  margin: -1rem 0 1rem 0;
-  padding: 4rem .2rem; /* Adjust the padding accordingly */
-  width: 30.5rem; /* Increase width for consistency with the title */
-  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.664); /* Box shadow */
-  background-color: #FFFFFF;
-  border-radius: 0 0 2rem 2rem;
-}
-.plan-tittle-3 {
-  color: #000000;
-  position: relative;
-  background-color: #B2D9BA;
-  padding:1rem ;
-  border-radius: 1.5rem;
-  width: 27.5rem;
-}
-/* Toggle Switch Container */
 .toggle-switch {
   position: relative;
-  width: 60px;
-  height: 30px;
+  width: 40px;
+  height: 20px;
 }
-/* Hidden Checkbox */
+
 .toggle-checkbox {
-  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-/* The background slider */
+
 .toggle-label {
   position: absolute;
   cursor: pointer;
-  background-color: #6D56AE;
-  border-radius: 34px;
+  background-color: #ccc;
+  border-radius: 20px;
   width: 100%;
   height: 100%;
   transition: background-color 0.3s;
 }
-/* The circle inside the slider */
-.toggle-label::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: white;
-  transition: 0.3s;
-}
-/* When the checkbox is checked, move the circle to the right */
-.toggle-checkbox:checked + .toggle-label::after {
-  transform: translateX(30px);
-}
-/* Change the background color when the checkbox is checked */
-.toggle-checkbox:checked + .toggle-label {
-  background-color: #1CC743;
-}
-.subscribe-btn {
 
-  text-decoration: none; /* Remove underline */
-  padding: 12px 24px; /* Space around the text */
-  border: none;
-  border-radius:3rem;
-  margin: 2rem;
+.toggle-label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #28a745;
+}
+
+.toggle-checkbox:checked + .toggle-label::after {
+  transform: translateX(20px);
+}
+
+#billing-period {
   font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: #6D56AE;
 }
-#subscribe-btn-1{
-  background-color: #DEF3E4; /* Dark background color */
-  color: #000000; /* White text */
+
+/* Subscription Plans Grid */
+.subscription-plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
-#subscribe-btn-1:hover {
-  background-color: #1CC743; /* Light background on hover */
-  color: #ffffff; /* Darker text color on hover */
-  transform: scale(1.05); /* Slightly larger on hover */
+
+/* Individual Plan Styling */
+.plan {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
 }
-#subscribe-btn-2{
-  background-color: #6D56AE; /* Dark background color */
-  color: #ffffff; /* White text */
+
+/* Plan Colors */
+#plan1 {
+  background-color: #DEF3E4; /* Freemium Plan Background */
 }
-#subscribe-btn-2:hover {
-  background-color: #1CC743; /* Light background on hover */
-  color: #ffffff; /* Darker text color on hover */
-  transform: scale(1.05); /* Slightly larger on hover */
+
+#plan2 {
+  background-color: #6D56AE; /* Premium Plan Background */
+  color: #fff; /* Set text color to white for better contrast */
 }
-#subscribe-btn-3{
-  background-color: #B2D9BA; /* Dark background color */
-  color: #ffffff; /* White text */
+
+#plan3 {
+  background-color: #B2D9BA; /* Pago por Curso Plan Background */
 }
-#subscribe-btn-3:hover {
-  background-color: #1CC743; /* Light background on hover */
-  color: #ffffff; /* Darker text color on hover */
-  transform: scale(1.05); /* Slightly larger on hover */
+
+.plan h1 {
+  font-size: 1.75rem;
+  color: inherit; /* Inherit color for better contrast */
+  margin: 0.5rem 0;
+}
+
+.plan .price {
+  font-size: 1.5rem;
+  color: inherit;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.plan-content ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.plan-content li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: inherit;
+  margin-bottom: 0.5rem;
+}
+
+.plan-content li span {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Subscribe Button Styles for Each Plan */
+#subscribe-btn-1 {
+  background-color: #DEF3E4; /* Freemium Button Color */
+  color: #333; /* Darker text color for contrast */
+}
+
+#subscribe-btn-2 {
+  background-color: #6D56AE; /* Premium Button Color */
+  color: #fff;
+}
+
+#subscribe-btn-3 {
+  background-color: #B2D9BA; /* Pago por Curso Button Color */
+  color: #333;
+}
+
+/* General Button Styling */
+.subscribe-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+  opacity: 0.9; /* Slight opacity change on hover for visual feedback */
 }
 
 
@@ -683,4 +666,96 @@ footer{
 }
 .Social-Media a{
   margin: 0 1rem;
+}
+
+
+
+
+
+/* Responsive adjustments */
+
+/* Large tablets */
+@media (max-width: 1600px) {
+  /*--------------------- Nav Block ------------------*/
+  .Nav-Header {
+    padding: 1.5rem;
+  }
+  .logo {
+    width: 12rem; /* Slightly smaller on tablets */
+  }
+  .navbar-links ul li {
+    font-size: 0.9rem;
+    margin: 0 1rem;
+  }
+  .startBtn {
+    padding: 0.6rem 1rem;
+    margin: 0 1.5rem;
+  }
+ /*--------------------- Stat block ------------------*/
+.Stat-block{
+  gap: 5%;
+  margin: 5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.stat{
+  display: flex;
+ text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.stat span{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1CC743;
+}
+.stat p{
+  width:19rem ;
+  font-weight: 600;
+  font-size: 1.20rem;
+  color: #6D56AE;
+}
+/*--------------------- why-block ------------------*/
+.why-block{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7rem 0;
+  background-color: #6F58B0;
+}
+.why-block-img img{
+ object-fit: cover; 
+ width: 60%;
+ height: 53.3rem;
+}
+.why-block-content{
+  width: 60rem;
+  height: 53.3rem;
+  gap: 3rem;
+  color: #FFFFFF;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  background-color: #6F58B0;
+}
+.why-block-content h1{
+ font-size: 4rem;
+}
+.why-block-content p{
+  font-size: 1.5rem;
+  max-width: 39.438rem;
+}
+.why-block-content a{
+ font-size: 1.5rem;
+ padding: 1rem 2rem;
+  background-color: #1CC743;
+  text-decoration: none;
+}
+
+
+
 }

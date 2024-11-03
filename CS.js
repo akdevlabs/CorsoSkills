@@ -61,3 +61,16 @@ function RCCupdateCarousel() {
       reviewText.textContent = "Hover over the circles below to see reviews.";
     });
   });
+
+  let visibleItemssize;
+function updateVisibleItems() {
+  if (window.innerWidth > 1024) {
+    visibleItems = 3;
+  } else if (window.innerWidth > 768) {
+    visibleItems = 2;
+  } else {
+    visibleItems = 1;
+  }
+}
+visibleItemssize();
+window.addEventListener('resize', updateVisibleItems);

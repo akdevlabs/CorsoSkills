@@ -25,58 +25,41 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .navbar-links ul li {
   font-size: 1rem;
   margin: 0 1rem;
-  color: #B2D9BA;
+  color: #6F58B0;
   padding: 0.5rem 2rem; /* Apply padding in the default state */
   background-color: transparent; /* Default transparent to avoid size shift */
   text-shadow: 1px 1px #0000005d;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .navbar-links ul li:hover {
-  color: #000000; /* Hover text color */
+  color: #1CC743;; /* Hover text color */
   background-color: #DEF3E4; /* Hover background */
   border-radius: 5px; /* Optional: add rounded edges */
 }
-
 .navbar-links a {
   text-decoration: none;
 }
-
 .startBtn {
+  color: #F9F9F9;
   margin: 0 3rem;
   padding: 1rem 1rem;
   border-radius: 0.2rem;
-  background-color: #B2D9BA;
+  background-color: #6f58b08a;
 }
-
 .navbar-links a .SECBtn {
   color: black;
 }
-
-#Course {
-  color: #000;
-  background-color: #DEF3E4;
-  padding: 0.5rem 1.5rem;
-  text-shadow: none;
-}
-
-
 lord-icon .dropbtn{
   width: 1rem;
 }
-
-
-
 /* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 /* Dropdown button */
 .dropbtn {
 
@@ -86,7 +69,6 @@ lord-icon .dropbtn{
   border: none;
   cursor: pointer;
 }
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
@@ -96,7 +78,6 @@ lord-icon .dropbtn{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 /* Links inside dropdown */
 .dropdown-content a {
   color: black;
@@ -104,20 +85,14 @@ lord-icon .dropbtn{
   text-decoration: none;
   display: block;
 }
-
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-
 /* Show dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
-
-
 @media screen and (max-width: 1600px) {
   .Nav-Header{
     display: flex; 
@@ -280,196 +255,138 @@ lord-icon .dropbtn{
       width: 8rem;
   }
 }
-/*--------------------- Course-Banners ------------------*/
-#backgroundElement{ 
-  padding: 2rem 0;
-  margin:  5rem;
-  border-radius:2rem;
-  background-image: url("Images/content/Outlaptop.webp");
 
-  background-position: center;
+/*--------------------- subBanner ------------------*/
+.subBanner{
+  text-align: center;
+  font-size: .6rem;
+  padding: .2rem 0;
+  background-color: #B2D9BA;
+}
+
+/*--------------------- CourseBanner ------------------*/
+#CourseBannerIcon{
+  width: 5rem;
+  background-color: #000;
+  padding: 1.7rem 1rem;
+  border-radius: 50%;
+}
+#CourseBannerBackground {
+  padding: 3rem 0 20rem 0;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
+  background-position: center;
 }
-.Course-Banners h1{
-  color: #ffffff;
-  font-size: 4rem;
-  margin: 10rem;
-  max-height: 34.438rem;
-}
-/*--------------------- Course-Block ------------------*/
-/* Container for the entire course block */
-.Course-Block {
-  margin: 0 5rem;
-  border-radius: 2rem;
-  padding: 5rem;
-  background-color: #DEF3E4;
-}
+.CourseBannerContent{
 
-/* Navigation section for the course categories */
-.Nav-Course-Block ul {
+  padding: 1rem 5rem;
+
+}
+.CourseBannerContent h1{
+  color: #000;
+  font-size: 3rem;
+}
+.ConnectCourse{
+  gap: 1rem;
   display: flex;
+  font-weight: 600;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0;
+}
+.teacherBlock{
+  gap: 1rem;
+  display: flex;
+  
+  align-items: center;
+}
+.teacherBlock h1, h2{
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+#CourseBannerTp{
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.costBlock{
+  margin: 1rem 5rem;
+  width: 10%;
+  text-align: center;
+   color: #B2D9BA;
+   font-size: 1.3rem;
+   font-weight: 600;
+   padding: .5rem;
+   background-color: #2A2C45;
+}
+#buyBtn{
+  width: 20%;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background-color: #1cc744c2;
+
+}
+/*--------------------- courseInfo ------------------*/
+.courseInfo{
+  width: 60%;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: .5cm;
+  margin: -6rem auto 0 auto;
+  background-color: #f1f1f1;
+  padding:2rem  2rem  1rem 2rem;
+  box-shadow: 10px 10px #0000004d;
+}
+.courseInfo a{
+  color: #6F58B0;
+  font-weight: 600;
+  font-size: 1.5rem;
+ 
+}
+.courseInfo p{
+  width: 15rem;
+}
+.courseInfo span{
+  padding: 1rem 0 0 0;
+}
+.courseInfoBlock{
+  display: flex;
+  flex-direction: column;
+}
+.line{
+  width: .1rem;
+  height: 5rem;
+
+  background-color: #B2D9BA;
+}
+/*--------------------- NavBTNS ------------------*/
+.NavBTNS {
+  gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Nav-Course-Block ul li {
-  font-size: 1.5rem;
-  list-style-type: none;
-  padding: 0.5rem 1.5rem; /* Ensure consistent padding */
-  border-radius: 5rem; /* Maintain border-radius in normal and hover state */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  background-color: transparent; /* Default transparent to avoid size shift */
-  color: #000000; /* Default text color */
+.NavBTNS a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 4rem 0 0 0;
+  padding: 1rem 2rem; /* Define consistent padding for all links */
+  transition: background-color 0.3s, padding 0.3s; /* Smooth transition */
   cursor: pointer;
 }
 
-.Nav-Course-Block ul li:hover {
-  color: #ffffff; /* Hover text color */
-  background-color: #6F58B0; /* Hover background */
-}
-
-
-
-
-
-
-
-#courses-container-tittle{
-  padding: .5rem 6rem;
-}
-#courses-container-tittle h3{
-  font-size: 1rem;
-  color: #6f58b0ad;
-  margin-bottom:-2rem ;
-}
-#courses-container-tittle h1{
-  font-weight: 600;
-  font-size: 3rem;
-  color: #6f58b0;
-}
-/* Container styles for grid layout */
-#courses-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive columns */
-  gap: 3rem; /* Space between each course card */
-  padding: 2rem; /* Padding around the container */
-  max-width: 1600px; /* Optional: limit the width of the container */
-  margin: 0 auto; /* Center the container */
-}
-
-/* Styling for each individual course card */
-.course {
-  background-color: #DEF3E4; /* Light background for contrast */
-  border: 1px solid #ddd; /* Border around each card */
-  border-radius: 8px; /* Rounded corners */
-  padding: 15px; /* Inner padding */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  display: flex;
-  flex-direction: column;
+.NavBTNS a:hover {
+  background-color: #b2d9ba48;
+  padding: 1rem 2rem; /* Keep padding the same on hover */
   
 }
-.course:hover {
-  color: #FFFFFF;
-  background-color: #6F58B0;
+.about{
+  background-color: #b2d9bab0;
+  padding: 1rem 2rem; /* Keep padding the same on hover */
 }
-
-/* Styling for the course title */
-.course h1 {
-  font-size: 1.5em;
- 
-  margin-bottom: 10px;
- 
-}
-
-/* Styling for the course subtitle */
-.course h3 {
-  font-size: 1.2em;
-
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-/* Styling for the details spans */
-.course span {
-  font-size: 0.9em;
-  
-  margin-bottom: 5px;
-  text-align: center;
-  display: block;
-}
-
-/* Image styling */
-.course img {
-  width: 100%; /* Full width of the card */
-  height: auto; /* Keep image aspect ratio */
-  border-radius: 2rem; /* Rounded corners on images */
-  margin-bottom: 10px;
-}
-.course .teacher-image {
-  width: 5rem;
-  height: 5rem;  /* Change as needed */
-  object-fit: cover;
-  border-radius: 50rem;
-}
-
-
-
-
-/* Star rating styling (horizontal) */
-.title-rating span {
-  display: inline-flex; /* or use display: flex for horizontal alignment */
-  gap: 2px; /* Optional: adds a small space between stars */
-  font-size: 1.5em;
-  color: #1CC743; /* Gold color for filled stars */
-}
-
-
-/* Container for teacher's image, name, and cost */
-.teacher-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 10px;
-}
-
-/* Styling for teacher's image */
-.teacher-info .teacher-image {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-bottom: 8px;
-  border: 2px solid #ddd;
-}
-
-/* Styling for teacher's name */
-.teacher-info h3 {
-  font-size: 1.2em;
-
-  margin: 4px 0;
-}
-
-/* Styling for course cost */
-.teacher-info span {
-  font-size: 1.1em;
-  font-weight: bold;
- 
-  margin-top: 4px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

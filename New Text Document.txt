@@ -1,27 +1,82 @@
-<meta charset="UTF-8">
+  const courseBannerElement = document.getElementById('CourseBannerName');
+      if (courseBannerElement) {
+        courseBannerElement.innerText = selectedCourse.name; // Set the course name
+      } else {
+        console.log("Element with ID #CourseBannerName not found in the DOM!");
+      }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+      // Render the course image in the #CourseBannerIcon element using Iconl property
+      const courseBannerIconElement = document.getElementById('CourseBannerIcon');
+      if (courseBannerIconElement) { 
+        courseBannerIconElement.src = selectedCourse.Icon || ''; // Set the course image source from Iconl property
+        
+      } else {
+        console.log("Element with ID #CourseBannerIcon not found in the DOM!");
+      }
+
+      const backgroundElement = document.getElementById('CourseBannerBackground');
+      if (backgroundElement && selectedCourse.backgroundImg) {
+        // Set the background image using the `backgroundImg` property
+        backgroundElement.style.backgroundImage = `url(${selectedCourse.backgroundImg})`;
+        backgroundElement.style.backgroundSize = 'cover'; // Cover the entire area
+        backgroundElement.style.backgroundPosition = 'center'; // Center the image
+      } else if (!selectedCourse.backgroundImg) {
+        console.log("No backgroundImg property found in the selected course data!");
+      }
+
+      const courseTnameElement = document.getElementById('teacherName');
+      if (courseBannerElement) {
+        courseTnameElement.innerText = selectedCourse.teacherName; // Set the course name
+      } else {
+        console.log("Element with ID #CourseBannerName not found in the DOM!");
+      }
 
 
-  <!-- Firebase App (core Firebase SDK) -->
-  <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js"></script>
-
-  <!-- Firebase Firestore SDK -->
-  <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"></script>
-
-
-
-
-  <script src="https://kit.fontawesome.com/4a32509195.js" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <meta charset="UTF-8">
-
+      const teacherSexElement = document.getElementById('teacherSex');      
+      if (teacherSexElement) {
+        // Check the gender and render the appropriate title
+        if (selectedCourse.gender === "female") {
+          teacherSexElement.innerText = "Instructora:";
+        } else if (selectedCourse.gender === "male") {
+          teacherSexElement.innerText = "Instructor:";
+        } else {
+          teacherSexElement.innerText = "Instructor:"; // Default text if gender is missing or unspecified
+        }
+      } else {
+        console.log("Element with ID #teacherSex not found in the DOM!");
+      }
 
 
+       // Render the course image in the #CourseBannerIcon element using Iconl property
+       const courseBannerTPElement = document.getElementById('CourseBannerTp');
+       if (courseBannerIconElement) { 
+        courseBannerTPElement.src = selectedCourse.teacherImage || ''; // Set the course image source from Iconl property
+         
+       } else {
+         console.log("Element with ID #CourseBannerIcon not found in the DOM!");
+       }
+
+
+       const courseCblockElement = document.getElementById('CourseBannerCblock');
+      if (courseBannerElement) {
+        courseCblockElement.innerText = selectedCourse.CC; // Set the course name
+      } else {
+        console.log("Element with ID #CourseBannerName not found in the DOM!");
+      }
+
+      const courseCostElement = document.getElementById('cost');
+      if (courseBannerElement) {
+        courseCostElement.innerText = `${"$" + selectedCourse.cost}`; // Set the course name
+      } else {
+        console.log("Element with ID #CourseBannerName not found in the DOM!");
+      }
+
+      const courseCoinElement = document.getElementById('coin');
+      if (courseBannerElement) {
+        courseCoinElement.innerText =  selectedCourse.coin; // Set the course name
+      } else {
+        console.log("Element with ID #CourseBannerName not found in the DOM!");
+      }
 
 
 
@@ -29,32 +84,3 @@
 
 
 
-
-
-
-
-const articles = [
-  { Article: 1, Tittle: "Cómo Certificaciones Profesionales Pueden Impulsar tu Empleabilidad", content: "Descubre por qué las certificaciones son clave para destacar en un mercado laboral competitivo.", image: "Images/content/Certification.webp" },
-
-  { Article: 2, Tittle: "Los Mejores Consejos para Aprender y Retener Información Efectivamente", content: "Exploramos estrategias comprobadas para mejorar la retención de información y acelerar tu proceso de aprendizaje.", image: "Images/content/Certification.webp", url: "certificaciones-profesionales.html" },
-  
-  { Article: 3, Tittle: "A Estudiar en Grupo vs. Estudiar Solo: Pros y Contras", content: "Evaluamos los pros y contras de estudiar solo o en grupo, y te damos recomendaciones.", image: "Images/content/Group.webp", url: "certificaciones-profesionales.html" },
-  
-  { Article: 4, Tittle: "Cómo Equilibrar el Trabajo y el Aprendizaje para Avanzar en tu Carrera", content: "Este artículo ofrece técnicas de gestión del tiempo y planificación.", image: "Images/content/balance.webp", url: "certificaciones-profesionales.html" },
-  
-  { Article: 5, Tittle: "Transformando el Mundo del Trabajo: Las Habilidades Blandas que las Empresas Buscan", content: "Destacamos las habilidades interpersonales más valoradas en el mercado actual.", image: "Images/content/world.webp", url: "certificaciones-profesionales.html" },
-  
-  { Article: 6, Tittle: "Cómo Crear un Plan de Aprendizaje Personalizado para el Éxito Profesional", content: "Descubre cómo estructurar tus metas de aprendizaje y elige los cursos adecuados.", image: "Images/content/path.webp", url: "certificaciones-profesionales.html" },
-  
-  { Article: 7, Tittle: "Inteligencia Emocional: La Clave para un Entorno Laboral Saludable", content: "Este artículo explora cómo desarrollar la autoconciencia y el control emocional.", image: "https://via.placeholder.com/300x200?text=Inteligencia+Emocional", url: "certificaciones-profesionales.html" },
-  
-  { Article: 8, Tittle: "El Futuro del Trabajo: Habilidades Digitales que Todos Necesitan", content: "Te mostramos qué habilidades tecnológicas son imprescindibles.", image: "https://via.placeholder.com/300x200?text=Habilidades+Digitales", url: "certificaciones-profesionales.html" },
-  
-  { Article: 9, Tittle: "Cómo Aprovechar el Networking para Crecer Profesionalmente", content: "Aprende técnicas efectivas para construir y mantener una red de contactos.", image: "https://via.placeholder.com/300x200?text=Networking", url: "certificaciones-profesionales.html" },
-  
-  { Article: 10, Tittle: "Mindfulness para Profesionales: Estrategias para Reducir el Estrés y Mejorar el Enfoque", content: "Explora prácticas simples para reducir el estrés y aumentar tu productividad.", image: "https://via.placeholder.com/300x200?text=Mindfulness", url: "certificaciones-profesionales.html" },
-  
-  { Article: 11, Tittle: "Aprendizaje Continuo: La Importancia de Mantenerse Actualizado en tu Industria", content: "Conoce la importancia del aprendizaje continuo y cómo impacta tu carrera.", image: "https://via.placeholder.com/300x200?text=Aprendizaje+Continuo", url: "certificaciones-profesionales.html" },
-  
-  { Article: 12, Tittle: "Técnicas para Mejorar tus Habilidades de Comunicación Profesional", content: "Este artículo cubre técnicas de comunicación esenciales.", image: "https://via.placeholder.com/300x200?text=Habilidades+de+Comunicación", url: "certificaciones-profesionales.html" }
-];
